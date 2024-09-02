@@ -1,0 +1,17 @@
+.marker-text {
+    display: flex;
+    align-items: center;
+}
+.marker-text::after {
+    content: " ";
+    margin-left: 1rem;
+    display: block;
+    background: white;
+    width: 25%;
+    height: 2px;
+
+}
+
+input, textarea{
+    outline: none;
+}
