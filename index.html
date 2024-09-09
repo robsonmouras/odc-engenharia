@@ -277,7 +277,9 @@
     <footer
       class="rounded-xl bg-[#5172FE] p-4 grid md:grid-cols-2 justify-center items-center text-white md:mt-32 mt-16"
     >
-      <div class="justify-center flex md:justify-start items-center mb-4 md:mb-0">
+      <div
+        class="justify-center flex md:justify-start items-center mb-4 md:mb-0"
+      >
         <img
           src="img/logo-odc-engenharia-branca.svg"
           alt="Logo ODC Engenharia"
@@ -316,8 +318,11 @@
         ></path>
       </svg>
     </a>
+    <!-- Spinner de Loading -->
+    <div id="loading-spinner" class="loading">
+      <div class="spinner"></div>
+    </div>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       document
@@ -385,6 +390,9 @@
 
           window.open(urlSend, "_blank");
         });
+      window.onload = function () {
+        document.getElementById("loading-spinner").style.display = "none";
+      };
     </script>
   </body>
 </html>
